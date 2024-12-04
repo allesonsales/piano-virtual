@@ -1,0 +1,130 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    color: #fff;
+}
+
+.container {
+    width: 780px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 35px 40px;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2 {
+    font-size: 1.6rem;
+
+}
+
+header .column {
+    display: flex;
+    align-items: center;
+}
+
+header .column span {
+    font-weight: 500;
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+
+.volumeSlider input {
+    accent-color: #fff;
+
+}
+
+.keysCheck input {
+    width: 60px;
+    height: 30px;
+    appearance: none;
+    border-radius: 30px;
+    background-color: #4b4b4b;
+    cursor: pointer;
+    position: relative;
+}
+
+.keysCheck input::before {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: .3rem;
+    border-radius: inherit;
+    background-color: #8c8c8c;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.keysCheck input:checked::before {
+    left: 2.1rem;
+    background-color: #ffffff;
+
+}
+
+.pianoKeys {
+    display: flex;
+    margin-top: 40px;
+}
+
+.pianoKeys .key {
+    cursor: pointer;
+    list-style: none;
+    color: #a2a2a2;
+    user-select: none;
+}
+
+.pianoKeys .white {
+    width: 70px;
+    height: 230px;
+    border: solid 1px black;
+    border-radius: 8px;
+    background: linear-gradient(#fff 95%, #eee 4%);
+}
+
+.pianoKeys .white.active {
+    box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom #fff 0%, #eee 100%);
+}
+
+.pianoKeys .black {
+    width: 44px;
+    height: 140px;
+    z-index: 2;
+    margin: 0 -22px 0 -22px;
+    border: solid 1px black;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333, #000);
+}
+
+.pianoKeys .black.active {
+    box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
+    background:linear-gradient(to bottom #000 0%, #434343 0%);
+}
+
+.pianoKeys .white span {
+    display: flex;
+    justify-content: center;
+   position: relative;
+   bottom: -150px;
+}
+
+.pianoKeys .black span {
+    display: flex;
+    justify-content: center;
+   position: relative;
+   bottom: -100px;
+}
+
+
+.pianoKeys .key.hide span {
+    display: none;
+}

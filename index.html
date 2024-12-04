@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano Virtual</title>
+
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/main.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h2>Piano Virtual</h2>
+
+            <div class="column volumeSlider">
+                <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any">
+            </div>
+
+            <div class="column keysCheck">
+                <span>Teclas</span> <input type="checkbox"></div>
+        </header>
+
+        <ul class="pianoKeys">
+            <li class="key white" data-key="a"><span>A</span></li>
+            <li class="key black" data-key="w"><span>W</span></li>
+            <li class="key white" data-key="s"><span>S</span></li>
+            <li class="key black" data-key="e"><span>E</span></li>
+            <li class="key white" data-key="d"><span>D</span></li>
+            <li class="key black" data-key="r"><span>R</span></li>
+            <li class="key white" data-key="f"><span>F</span></li>
+            <li class="key black" data-key="t"><span>T</span></li>
+            <li class="key white" data-key="g"><span>G</span></li>
+            <li class="key black" data-key="y"><span>Y</span></li>
+            <li class="key white" data-key="h"><span>H</span></li>
+            <li class="key black" data-key="u"><span>U</span></li>
+            <li class="key white" data-key="j"><span>J</span></li>
+            <li class="key black" data-key="i"><span>I</span></li>
+            <li class="key white" data-key="k"><span>K</span></li>
+            <li class="key black" data-key="o"><span>O</span></li>
+            <li class="key white" data-key="l"><span>L</span></li>
+        </ul>
+
+    </div>
+    <script src="./src/script/engine.js" defer></script>
+</body>
+</html>
